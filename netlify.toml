@@ -1,0 +1,17 @@
+
+# This file configures your Netlify deploy
+# Settings declared here override everything on Dashboard interface
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "yarn build"
+  functions = "src/functions"
+  node_bundler = "esbuild"
+
+
+# redirects with status 200 are rewrites
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/openhtml"
+  status = 200
+

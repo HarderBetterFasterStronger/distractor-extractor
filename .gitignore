@@ -1,0 +1,9 @@
+
+# node.js
+node_modules
+
+# netlify
+.netlify
+
+# IDE
+.vscode
