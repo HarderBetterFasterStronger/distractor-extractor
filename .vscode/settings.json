@@ -1,0 +1,92 @@
+{
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#a3707e",
+    "titleBar.activeBackground": "#69444e",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#69444e99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false, // required 
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional 
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last 
+  "peacock.color": "#885865",
+  // tried below, no good
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // },
+  // "editor.formatOnSave": true, // this will currently make "eslint.codeActionsOnSave.rules" setting not work
+  // "editor.formatOnPaste": false,
+  // "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "eslint.format.enable": true,
+  "eslint.useESLintClass": true,
+  "eslint.codeActionsOnSave.rules": [
+    "linebreak-style",
+    "eol-last",
+    "no-multiple-empty-lines",
+    "lines-between-class-members",
+    "semi-style",
+    "comma-style",
+    "dot-location",
+    "operator-linebreak",
+    "multiline-ternary",
+    "brace-style",
+    "react/jsx-curly-newline",
+    "object-curly-newline",
+    "object-property-newline",
+    "function-paren-newline",
+    "function-call-argument-newline",
+    "newline-per-chained-call",
+    "implicit-arrow-linebreak",
+    "indent",
+    "no-trailing-spaces",
+    "no-multi-spaces",
+    "semi-spacing",
+    "comma-spacing",
+    "space-unary-ops",
+    "space-infix-ops",
+    "rest-spread-spacing",
+    "keyword-spacing",
+    "space-in-parens",
+    "space-before-function-paren",
+    "generator-star-spacing",
+    "yield-star-spacing",
+    "template-tag-spacing",
+    "arrow-spacing",
+    "func-call-spacing",
+    "space-before-blocks",
+    "block-spacing",
+    "template-curly-spacing",
+    "object-curly-spacing",
+    "switch-colon-spacing",
+    "key-spacing",
+    "computed-property-spacing",
+    "no-whitespace-before-property",
+    "semi",
+    "curly",
+    "arrow-parens",
+    "new-parens",
+    "wrap-iife",
+    "@typescript-eslint/no-extra-parens",
+    "quotes",
+    "jsx-quotes",
+    "comma-dangle",
+    "dot-notation",
+  ],
+}

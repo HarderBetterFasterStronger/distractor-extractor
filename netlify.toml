@@ -4,14 +4,16 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 
 [build]
-  command = "yarn build"
-  functions = "src/functions"
+  command = "npm run build"
+
+[functions]
   node_bundler = "esbuild"
+  external_node_modules = ["jsdom"]
 
 
-# redirects with status 200 are rewrites
-[[redirects]]
-  from = "/"
-  to = "/.netlify/functions/openhtml"
-  status = 200
+# # redirects with status 200 are rewrites
+# [[redirects]]
+#   from = "/"
+#   to = "/.netlify/functions/openhtml"
+#   status = 200
 

@@ -1,41 +1,44 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
         "allowJs": true,
-        "baseUrl": "./",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
-        "isolatedModules": true,
-        "jsx": "preserve",
         "lib": [
             "dom",
             "dom.iterable",
-            "esnext"
+            "esnext",
         ],
+        "allowSyntheticDefaultImports": true,
         // Recommended: Compiler complains about expressions implicitly typed as 'any'
         "noImplicitAny": true,
-        "module": "esnext",
+        "module": "NodeNext",
         "moduleResolution": "node",
         "noEmit": true,
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "strict": true,
         "target": "es5",
-        "paths": {
-            "@components/*": [
-                "components/*"
-            ],
-            "@styles/*": [
-                "styles/*"
-            ]
-        }
+        "outDir": "./netlify/functions",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "downlevelIteration": true, // ability to spread an iterable set
     },
+    "paths": [
+        {
+            "@src/": "src/"
+        }
+    ],
     "include": [
-        "next-env.d.ts",
         "**/*.ts",
-        "**/*.tsx",
-        "next.config.js"
+        "**/*.js"
     ],
     "exclude": [
-        "node_modules"
+        "node_modules",
+        ".eslintrc.js",
+    ],
+    "types": [
+        "node"
     ]
 }
